@@ -11,7 +11,7 @@ function __construct(){
 
 //Load admin functions
 function adminInit(){
-
+	//load admin pages 
 
 
 }

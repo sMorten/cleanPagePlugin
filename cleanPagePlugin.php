@@ -27,8 +27,7 @@ $SMStart = new SMCleanpluginsetup();
 
 //Load admin scripts
 if(is_admin){
-
-
+	$SMStart->adminInit();
 }
 
 
