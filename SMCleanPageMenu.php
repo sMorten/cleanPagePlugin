@@ -1,5 +1,6 @@
 <?php
 	function SMCleanPage_admin_page(){
+		echo("test");
 	?>
 
 

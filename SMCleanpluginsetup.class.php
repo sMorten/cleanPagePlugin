@@ -4,7 +4,7 @@ class SMWeb_clean_page{
 public $smPages;
 //Load all required functions
 function __construct(){
-	$this->setOptions();
+	//$this->setOptions();
 
 
 }
@@ -14,13 +14,13 @@ function __construct(){
 //Load admin functions
 function adminInit(){
 	//load admin pages 
-	add_action('admin_menu',array(this,'sm_clean_page_menu'));
+	add_action('admin_menu',array($this,'sm_clean_page_menu'));
 
 }
 
 //function to add menu page
 function sm_clean_page_menu(){
-	add_menu_page( 'SMWeb Clean Sales Page', 'SMWeb Clean Sales Page', 'manage_options', 'admin/php/SMCleanPageMenu.php', 'SMCleanPage_admin_page', 'admin/SMWDIconOnly.svg', 6  );
+	add_menu_page( 'SMWeb Clean Sales Page', 'SMWeb Clean Page Menu', 'manage_options', 'cleanPagePlugin/SMCleanPageMenu.php', 'SMCleanPage_admin_page', 'none', 10 );
 
 }
 
